@@ -1,0 +1,137 @@
+/*
+Theme Name: Henrik Portfolio
+Author: Henrik Danielsson
+Author URI: http://henrikdanielsson.com
+Version 1.0
+*/
+
+
+
+/* -- VARIABLES -- */
+
+$background-color: white;
+$primary-color: blue;
+$secondary-color: #999;
+$white-color: white;
+$black-color: black;
+$shadow: rgba(0, 0, 0, 0.5);
+
+/* -- MAIN CSS -- */
+
+*, html {
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $background-color;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	color: $black-color;
+}
+
+/* -- NAVIGATION SIDEBAR -- */
+
+aside.sidebar {
+	display: flex;
+	a, :visited{
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $black-color;
+		transition: all 0.2s ease;
+		&:hover {
+			color: $secondary-color;
+			padding-left: 5px;
+		}
+	}
+}
+
+.current_page_item {
+	color: $primary-color;
+}
+
+#logo {
+	font-size: 80%;
+	justify-content: center;
+}
+
+.nav-wrapper {
+	position: fixed;
+	padding: 20px;
+	// This width needs to be the same as <section> margin-left
+	width: 20vw;
+	background: $white-color;
+	height: 100vh;
+	display: flex;
+	// align-items: center;
+	flex-direction: column;
+	// box-shadow: 0px 1px 10px 2px $shadow;
+	
+	#logo {
+		// align-self: center;
+	}
+	li {
+		list-style: none;
+		padding-top: 10px;
+	}
+	#primary-list {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	#secondary-list li {
+		font-size: 75%;
+	}
+}
+
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	// height: 90vh;
+	/* This margin-left needs to be the same as .nav-wrapper width*/
+	margin-left: 20vw;
+	a {
+		display: flex;
+		text-decoration: none;
+		flex-grow: 1;
+		min-width: 300px;
+		height: 300px;
+		
+	}
+	.box {
+		display: flex;
+		padding: 20px;
+		// margin-left: 10px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-grow: 1;
+		
+		background-size: cover;
+		background: center no-repeat;
+		p {
+			color: $black-color;
+		}
+	}
+}
+
+/* -- FOOTERS -- */
+
+// Footer when sidebar
+.footer {
+	display: flex;
+	margin-left: 20vw;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
+	
+}
+// Footer for the page.php
+.page-footer{
+	@extend .footer;
+	margin-left: 0;
+}

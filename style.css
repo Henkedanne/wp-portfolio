@@ -1,0 +1,136 @@
+/*
+Theme Name: Henrik Portfolio
+Author: Henrik Danielsson
+Author URI: http://henrikdanielsson.com
+Version 1.0
+*/
+/* -- VARIABLES -- */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+/* -- MAIN CSS -- */
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+  color: black;
+}
+
+/* -- HEADER -- */
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+#logo > h1 > a {
+  font-size: 80%;
+  padding-left: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+nav.nav-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0px 40px 0px 0px;
+}
+
+nav.nav-wrapper a, nav.nav-wrapper :visited {
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  color: black;
+  transition: all 0.2s ease;
+}
+
+nav.nav-wrapper a:hover, nav.nav-wrapper :visited:hover {
+  color: #999;
+}
+
+nav.nav-wrapper li {
+  list-style: none;
+}
+
+#menu-secondary-menu {
+  display: flex;
+  padding: 10px;
+}
+
+#menu-secondary-menu li {
+  padding-left: 10px;
+}
+
+.current_page_item {
+  color: blue;
+}
+
+/* --- THE GRID --- */
+.content-container {
+  display: grid;
+  grid-auto-rows: calc((calc(100vh - 6em) / 30) - 10px);
+  grid-auto-columns: calc((calc(100% - 6em) / 30) - 10px);
+  grid-gap: 10px;
+  margin: 100px auto;
+  width: calc(100% - 6em);
+  height: calc(100vh - 6em);
+  justify-content: center;
+  align-content: center;
+}
+
+.content-container a {
+  text-decoration: none;
+}
+
+.content-container a:first-child {
+  grid-area: 11 / 2 / 17 / 5;
+}
+
+.content-container a:nth-child(2) {
+  grid-area: 22 / 6 / 28 / 10;
+}
+
+.content-container .box {
+  height: auto;
+  background: center no-repeat;
+  background-size: cover;
+}
+
+.content-container .box p {
+  color: black;
+}
+
+/* --- PAGE STYLES --- */
+.page-content-wrapper {
+  display: grid;
+  max-width: 700px;
+  margin: 100px auto;
+}
+
+.page-title {
+  margin-bottom: 20px;
+}
+
+.page-content {
+  margin: 0 auto;
+}
+
+/* -- FOOTERS -- */
+.footer, .page-footer {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer {
+  margin-left: 0;
+}
