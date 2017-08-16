@@ -11,6 +11,7 @@ Version 1.0
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
@@ -82,41 +83,41 @@ nav.nav-wrapper li {
 }
 
 /* --- THE GRID --- */
-.content-container {
+.content-grid {
   display: grid;
   grid-auto-rows: calc((calc(100vh - 6em) / 30) - 10px);
   grid-auto-columns: calc((calc(100% - 6em) / 30) - 10px);
   grid-gap: 10px;
+  width: calc(100vw - 2em);
   justify-content: center;
   align-content: center;
 }
 
-.content-container a {
+.content-grid a {
   text-decoration: none;
-  justify-content: center;
 }
 
-.content-container a:first-child {
+.content-grid a:first-child {
   grid-area: 8 / 1 / 17 / 16;
 }
 
-.content-container a:nth-child(2) {
+.content-grid a:nth-child(2) {
   grid-area: 17 / 10 / 25 / 16;
 }
 
-.content-container a:nth-child(3) {
+.content-grid a:nth-child(3) {
   grid-area: 10 / 16 / 22 / 30;
 }
 
-.content-container a:nth-child(4) {
+.content-grid a:nth-child(4) {
   grid-area: 3 / 16 / 10 / 23;
 }
 
-.content-container a:nth-child(5) {
+.content-grid a:nth-child(5) {
   grid-area: 22/ 16 / 30 / 25;
 }
 
-.content-container .box {
+.content-grid .box {
   padding: 10px;
   height: 100%;
   width: 100%;
@@ -124,7 +125,7 @@ nav.nav-wrapper li {
   background-size: cover;
 }
 
-.content-container .box p {
+.content-grid .box p {
   color: black;
 }
 
@@ -147,7 +148,6 @@ nav.nav-wrapper li {
 .footer, .page-footer {
   grid-area: footer;
   display: flex;
-  height: 100px;
   justify-content: center;
   align-items: center;
 }

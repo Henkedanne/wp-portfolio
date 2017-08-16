@@ -2,7 +2,7 @@
 
 
 
-    <div class ="content-container">
+    <div class ="content-grid">
     <?php $page_query = new WP_Query( array( 'post_type' => 'page' ) ); ?>
 
     <?php if ($page_query->have_posts()) :
@@ -20,7 +20,7 @@
         else :
             echo '<p>No Content</p>';
         endif; ?>
-    </div> <!-- .content-contaier ENDS... -->
+    </div> <!-- .content-grid ENDS... -->
 
 
 
