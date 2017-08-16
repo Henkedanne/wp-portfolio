@@ -4,6 +4,6 @@
 
 </footer>
 
- 
+</div> <!-- .main-grid ends -->
 </body>
 </html>
