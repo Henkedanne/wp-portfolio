@@ -27,8 +27,8 @@ h1 {
 .main-grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto auto 4em;
-  grid-template-areas: "header header" "... ..." "footer footer";
+  grid-template-rows: auto auto 2em;
+  grid-template-areas: "header header" "... ..." "footer footer";
 }
 
 /* -- HEADER -- */
@@ -147,11 +147,15 @@ nav.nav-wrapper li {
 /* -- FOOTERS -- */
 .footer, .page-footer {
   grid-area: footer;
+  padding-right: 1em;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .page-footer {
   margin-left: 0;
 }
+ 
+
+ /*# sourceMappingURL= style.css.map */

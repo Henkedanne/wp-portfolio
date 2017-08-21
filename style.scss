@@ -42,7 +42,7 @@ h1 {
 .main-grid {
 	display: grid;
 	grid-template-columns: 50% 50%;
-	grid-template-rows: auto auto 4em;
+	grid-template-rows: auto auto 2em;
 	grid-template-areas: 
 							"header header"
 							"... ..."
@@ -60,7 +60,7 @@ header {
 }
 #logo > h1 > a{
 	font-size: 80%;
-	padding-left: 20px;
+	padding-left: 1em;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: $black-color;
@@ -68,11 +68,10 @@ header {
 nav.nav-wrapper {
 	display: flex;
 	flex-flow: row wrap;
-	padding: 0px 40px 0px 0px;
+	padding-right: 1em;
 	
 	a, :visited{
 		text-decoration: none;
-		display: block;
 		text-transform: uppercase;
 		color: $black-color;
 		transition: all 0.2s ease;
@@ -146,8 +145,9 @@ nav.nav-wrapper {
 // Footer when sidebar
 .footer {
 	grid-area: footer;
+	padding-right: 1em;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 }
 // Footer for the page.php

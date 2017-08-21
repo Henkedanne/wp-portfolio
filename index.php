@@ -15,6 +15,9 @@
                     <h1><?php the_title(); ?></h1>
                 </div>
               </a>  
+              <!-- <script>
+                  var pageTitle = <?php echo the_title(); ?>;
+              </script> -->
         <?php endwhile;
 
         else :
