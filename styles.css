@@ -54,7 +54,6 @@ header {
 	grid-area: header;
 	display: flex;
 	justify-content: space-between;
-	
 	align-items: center;
 
 }
@@ -107,7 +106,7 @@ nav.nav-wrapper {
 	align-content: center;
 	a {
 		text-decoration: none;
-		// row start / col start / row end / col end/
+		/* row start / col start / row end / col end/ */
 		&:first-child { grid-area: 8 / 1 / 17 / 16;}
 		&:nth-child(2) { grid-area: 17 / 10 / 25 / 16;}
 		&:nth-child(3) { grid-area: 10 / 16 / 22 / 30;}
@@ -115,7 +114,6 @@ nav.nav-wrapper {
 		&:nth-child(5) { grid-area: 22/ 16 / 30 / 25;}
 	}
 	.box {
-		// padding: 20px;
 		padding: 10px;
 		height: 100%;
 		width: 100%;
@@ -142,7 +140,7 @@ nav.nav-wrapper {
 
 /* -- FOOTERS -- */
 
-// Footer when sidebar
+/* Footer when sidebar */
 .footer {
 	grid-area: footer;
 	padding-right: 1em;
@@ -150,7 +148,7 @@ nav.nav-wrapper {
 	justify-content: flex-end;
 	align-items: center;
 }
-// Footer for the page.php
+/* Footer for the page.php */
 .page-footer{
 	@extend .footer;
 	margin-left: 0;

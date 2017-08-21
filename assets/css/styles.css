@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+/*
+Theme Name: Henrik Portfolio
+Author: Henrik Danielsson
+Author URI: http://henrikdanielsson.com
+Version 1.0
+*/
+/* -- VARIABLES -- */
+/* -- MAIN CSS -- */
+*, html {
+	margin: 0; 
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	height: 100%;
+	
+}
+body {
+	background-color: white;
+	font-family: 'PT Sans', sans-serif;
+
+}
+h1 {
+	color: black;
+	}
+/* -- MAIN GRID -- */
+.main-grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto 2em;
+	grid-template-areas: 
+							"header header"
+							"... ..."
+							"footer footer";
+}
+/* -- HEADER -- */
+header {
+	grid-area: header;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+
+}
+#logo > h1 > a{
+	font-size: 80%;
+	padding-left: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+}
+nav.nav-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	padding-right: 1em;
+}
+nav.nav-wrapper a, nav.nav-wrapper :visited{
+		text-decoration: none;
+		text-transform: uppercase;
+		color: black;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+	}
+nav.nav-wrapper a:hover, nav.nav-wrapper :visited:hover {
+			color: #999;
+			
+		}
+nav.nav-wrapper li {
+		list-style: none;
+	}
+#menu-primary-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 10px;
+}
+#menu-primary-menu li {
+		padding-left: 10px;
+	}
+.current_page_item {
+	color: blue;
+}
+/* --- THE GRID --- */
+.content-grid {
+	display: grid;
+	grid-auto-rows: calc((calc(100vh - 6em) / 30) - 10px);
+	grid-auto-columns: calc((calc(100% - 6em) / 30) - 10px);
+	grid-gap: 10px;
+	width: calc(100vw - 2em);
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
+}
+.content-grid a {
+		text-decoration: none;
+	}
+/* row start / col start / row end / col end/ */
+.content-grid a:first-child { grid-area: 8 / 1 / 17 / 16;}
+.content-grid a:nth-child(2) { grid-area: 17 / 10 / 25 / 16;}
+.content-grid a:nth-child(3) { grid-area: 10 / 16 / 22 / 30;}
+.content-grid a:nth-child(4) { grid-area: 3 / 16 / 10 / 23;}
+.content-grid a:nth-child(5) { grid-area: 22/ 16 / 30 / 25;}
+.content-grid .box {
+		padding: 10px;
+		height: 100%;
+		width: 100%;
+		background: center no-repeat;
+		background-size: cover;
+	}
+.content-grid .box p {
+			color: black;
+		}
+/* --- PAGE STYLES --- */
+.page-content-wrapper {
+	display: grid;
+	max-width: 700px;
+	margin: 100px auto;
+}
+.page-title {
+	margin-bottom: 20px;
+}
+.page-content {
+	margin: 0 auto;
+}
+/* -- FOOTERS -- */
+/* Footer when sidebar */
+.footer {
+	grid-area: footer;
+	padding-right: 1em;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+/* Footer for the page.php */
+.page-footer{
+	@extend .footer;
+	margin-left: 0;
+}
