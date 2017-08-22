@@ -1,14 +1,13 @@
 var box = document.querySelectorAll('.box');
-console.log(box);
+var textBox = document.querySelector('.box__text');
 
-// for (var i = 0; i < box.length; i++) {
-//     console.log(box[i].childNodes[1].innerHTML);
-    
-// }
-function hover(index) {
-	console.log(index.fromElement.innerText);
+
+
+function hover(e) {
+	console.log(e.target.innerText);
+    textBox.innerHTML = e.target.innerText;
 }
 
-box.forEach(function(element, index) {
-	element.addEventListener('mouseover', hover);
+box.forEach(function(boxEl) {
+	boxEl.addEventListener('mouseover', hover);
 });

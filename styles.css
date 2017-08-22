@@ -122,6 +122,12 @@ nav.nav-wrapper {
 		background-size: cover;
 		
 	}
+	.box__text {
+		grid-area: 4 / 6 / 8 / 12;
+		color: white;
+		font-size: 100%;
+		background-color: black;
+	}
 }
 /* --- PAGE STYLES --- */
 .page-content-wrapper {

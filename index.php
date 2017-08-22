@@ -20,6 +20,7 @@
         else :
             echo '<p>No Content</p>';
         endif; ?>
+        <div class="box__text"></div>
     </div> <!-- .content-grid ENDS... -->
 
 
