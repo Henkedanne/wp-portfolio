@@ -103,9 +103,9 @@ nav.nav-wrapper {
 	grid-gap: 10px;
 	width: calc(100vw - 2em);
 	justify-content: center;
-	align-content: center;
 	a {
 		text-decoration: none;
+		
 		/* row start / col start / row end / col end/ */
 		&:first-child { grid-area: 8 / 1 / 17 / 16;}
 		&:nth-child(2) { grid-area: 17 / 10 / 25 / 16;}
@@ -114,15 +114,13 @@ nav.nav-wrapper {
 		&:nth-child(5) { grid-area: 22/ 16 / 30 / 25;}
 	}
 	.box {
+		display: flex;
 		padding: 10px;
 		height: 100%;
 		width: 100%;
 		background: center no-repeat;
 		background-size: cover;
 		
-		p {
-			color: $black-color;
-		}
 	}
 }
 /* --- PAGE STYLES --- */

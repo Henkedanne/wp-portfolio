@@ -6,9 +6,9 @@ console.log(box);
     
 // }
 function hover(index) {
-    console.log(index.fromElement.innerText);
+	console.log(index.fromElement.innerText);
 }
 
 box.forEach(function(element, index) {
-    element.addEventListener('mouseover', hover);
-})
+	element.addEventListener('mouseover', hover);
+});
