@@ -124,10 +124,12 @@ nav.nav-wrapper li {
 	}
 .content-grid .box__text {
 		grid-area: 6 / 10 / 14 / 18;
-		color: white;
 		font-size: 100%;
 		background-color: black;
 	}
+.content-grid .box__text h1 {
+			color: white;
+		}
 /* --- PAGE STYLES --- */
 .page-content-wrapper {
 	display: grid;
