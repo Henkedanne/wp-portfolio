@@ -13,7 +13,7 @@ Version 1.0
 	padding: 0;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
-	height: 100%;
+	
 	
 }
 body {
@@ -117,6 +117,7 @@ nav.nav-wrapper li {
 		padding: 10px;
 		background: center no-repeat;
 		background-size: cover;
+		height: 100%;
 		
 	}
 .content-grid__title {
@@ -125,7 +126,7 @@ nav.nav-wrapper li {
 		color: white;
 	}
 .box__title {
-	grid-area: 6 / 10/ 13 / 20 ;
+	grid-area: 6 / 10/ 9 / 20 ;
 }
 .title-is-hidden {
 	opacity: 0;
@@ -133,14 +134,17 @@ nav.nav-wrapper li {
 /* --- PAGE STYLES --- */
 .page-content-wrapper {
 	display: grid;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	max-width: 700px;
-	margin: 100px auto;
 }
 .page-title {
 	margin-bottom: 20px;
 }
 .page-content {
-	margin: 0 auto;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 }
 /* -- FOOTERS -- */
 /* Footer when sidebar */
