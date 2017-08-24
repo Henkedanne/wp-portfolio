@@ -1,5 +1,5 @@
 <aside class="sidebar" >
-	<nav class="nav-wrapper" role="navigation">
+	<nav class="sidebar__navwrapper" role="navigation">
 	 		
 			<span id="logo"><h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>   </span>
 				

@@ -12,7 +12,7 @@
 
               <a href="<?php echo the_permalink(); ?>">  
                 <div class="content-grid__box" id="<?php echo $post->ID; ?>" style="background-image: url(<?php echo $bgImage[0];?>)">  
-                    <h1><?php the_title(); ?></h1>
+                    <h1 class="title-is-hidden"><?php the_title(); ?></h1>
                 </div>
               </a>  
         <?php endwhile;

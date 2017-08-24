@@ -76,7 +76,6 @@ nav.nav-wrapper {
 		transition: all 0.2s ease;
 		&:hover {
 			color: $secondary-color;
-			
 		}
 	}
 	li {
@@ -121,15 +120,18 @@ nav.nav-wrapper {
 		
 	}
 	&__title {
-		font-size: 600%;
-		background-color: red;
-		writing-mode: vertical-lr;
-		color:black;
+		font-size: 500%;
+		background-color: black;
+		color: white;
 	}
 }
 .box__title {
-	grid-area: 6 / 10/ 8 / 20 ;
+	grid-area: 6 / 10/ 13 / 20 ;
 }
+.title-is-hidden {
+	opacity: 0;
+}
+
 /* --- PAGE STYLES --- */
 .page-content-wrapper {
 	display: grid;
