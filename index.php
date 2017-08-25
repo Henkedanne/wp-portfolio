@@ -3,8 +3,8 @@
 
 
     <div class ="content-grid">
-    <?php $page_query = new WP_Query( array( 'post_type' => 'page', 'post_type' => isnot about ) ); ?>
-    <?php $about_query = new WP_Query( array( 'post_type' => 'page', 'post_name' => 'About' ) ); ?>
+    
+    <?php $about_query = new WP_Query( array( 'post_type' => 'page', 'name' => 'About' ) ); ?>
 
     <?php if ($about_query -> have_posts()) :
         while ($about_query -> have_posts()) : $about_query -> the_post(); ?>
@@ -12,17 +12,19 @@
             <?php $bgImage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?> 
 
               <a href="<?php echo the_permalink(); ?>">  
-                <div class="content-grid__box content-grid__intro" id="<?php echo $post->ID; ?>" style="background-image: url(<?php echo $bgImage[0];?>)">  
+                <div class="content-grid__about content-grid__box " id="<?php echo $post->ID; ?>" style="background-image: url(<?php echo $bgImage[0];?>)">  
                     <p><?php the_excerpt(); ?></p>
                 </div>
-              </a>  
+              </a> 
+              
         <?php endwhile;
 
         else :
-            echo '<p>No Intro post</p>';
+            echo '<p>No About post</p>';
         endif; ?>
 
-
+       
+    <?php $page_query = new WP_Query( array( 'post_type' => 'page', 'post__not_in' => array(33)) ); ?>
 
     <?php if ($page_query->have_posts()) :
         while ($page_query->have_posts()) : $page_query->the_post(); ?>

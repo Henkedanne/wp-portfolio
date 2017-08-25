@@ -125,6 +125,10 @@ nav.nav-wrapper li {
 		background-color: black;
 		color: white;
 	}
+.content-grid__about {
+		font-size: 1.5em;
+		color: black;
+	}
 .box__title {
 	grid-area: 6 / 10/ 9 / 20 ;
 }

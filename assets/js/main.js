@@ -5,6 +5,7 @@ var titleHolder = document.querySelector('.content-grid__title');
 
 
 function addTitle(e) {
+	console.log(e);
 	titleHolder.innerHTML = e.target.innerText;
 }
 
