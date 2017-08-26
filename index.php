@@ -4,7 +4,7 @@
 
     <div class ="content-grid">
     
-    <?php $about_query = new WP_Query( array( 'post_type' => 'page', 'name' => 'About' ) ); ?>
+    <!-- <?php $about_query = new WP_Query( array( 'post_type' => 'page', 'name' => 'About' ) ); ?>
 
     <?php if ($about_query -> have_posts()) :
         while ($about_query -> have_posts()) : $about_query -> the_post(); ?>
@@ -13,6 +13,7 @@
 
               <a href="<?php echo the_permalink(); ?>">  
                 <div class="content-grid__about content-grid__box " id="<?php echo $post->ID; ?>" style="background-image: url(<?php echo $bgImage[0];?>)">  
+                    <h1 class="title-is-hidden"><?php the_title(); ?></h1>
                     <p><?php the_excerpt(); ?></p>
                 </div>
               </a> 
@@ -23,7 +24,10 @@
             echo '<p>No About post</p>';
         endif; ?>
 
-       
+        -->
+    <div class="content-grid__about"><p>Hi, I'm Henrik Danielsson!
+Lorem ipsum dolor sit amet, consectetur adipiscing <br> Quisque laoreet dolor justo. Quisque pellentesque sollicitudin purus,</p></div>
+    
     <?php $page_query = new WP_Query( array( 'post_type' => 'page', 'post__not_in' => array(33)) ); ?>
 
     <?php if ($page_query->have_posts()) :

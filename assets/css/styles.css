@@ -14,7 +14,6 @@ Version 1.0
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	
-	
 }
 body {
 	background-color: white;
@@ -33,6 +32,7 @@ h1 {
 							"header header"
 							"... ..."
 							"footer footer";
+	height: 100vh;
 }
 /* -- HEADER -- */
 header {
@@ -40,12 +40,15 @@ header {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	
 	-webkit-box-pack: justify;
+	
 	    -ms-flex-pack: justify;
+	
 	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 
 }
 #logo > h1 > a{
@@ -90,7 +93,7 @@ nav.nav-wrapper li {
 .current_page_item {
 	color: blue;
 }
-/* --- THE GRID --- */
+/* --- CONTENT GRID --- */
 .content-grid {
 	display: grid;
 	grid-auto-rows: calc((calc(100vh - 6em) / 30) - 10px);
@@ -104,9 +107,9 @@ nav.nav-wrapper li {
 .content-grid a {
 		text-decoration: none;
 	}
-/* row start / col start / row end / col end/ */
-.content-grid a:first-child { grid-area: 8 / 1 / 17 / 16;}
+/* &:first-child { grid-area: 8 / 1 / 17 / 16;}*/
 .content-grid a:nth-child(2) { grid-area: 17 / 10 / 25 / 16;}
+/* row start / col start / row end / col end/ */
 .content-grid a:nth-child(3) { grid-area: 10 / 16 / 22 / 30;}
 .content-grid a:nth-child(4) { grid-area: 3 / 16 / 10 / 23;}
 .content-grid a:nth-child(5) { grid-area: 22/ 16 / 30 / 25;}
@@ -126,6 +129,14 @@ nav.nav-wrapper li {
 		color: white;
 	}
 .content-grid__about {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		padding: 10px;
+		background: center no-repeat;
+		background-size: cover;
+		height: 100%;
+		grid-area: 8 / 1 / 17 / 16;
 		font-size: 1.5em;
 		color: black;
 	}
@@ -138,17 +149,17 @@ nav.nav-wrapper li {
 /* --- PAGE STYLES --- */
 .page-content-wrapper {
 	display: grid;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	max-width: 700px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	
 }
 .page-title {
 	margin-bottom: 20px;
 }
 .page-content {
-	-ms-flex-line-pack: center;
-	    align-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 /* -- FOOTERS -- */
 /* Footer when sidebar */

@@ -25,7 +25,6 @@ $shadow: rgba(0, 0, 0, 0.5);
 	padding: 0;
 	box-sizing: border-box;
 	
-	
 }
 
 body {
@@ -47,14 +46,16 @@ h1 {
 							"header header"
 							"... ..."
 							"footer footer";
+	height: 100vh;
 }
 /* -- HEADER -- */
 
 header {
 	grid-area: header;
 	display: flex;
+	
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 
 }
 #logo > h1 > a{
@@ -93,7 +94,7 @@ nav.nav-wrapper {
 	color: $primary-color;
 }
 
-/* --- THE GRID --- */
+/* --- CONTENT GRID --- */
 
 .content-grid {
 	display: grid;
@@ -106,7 +107,7 @@ nav.nav-wrapper {
 		text-decoration: none;
 		
 		/* row start / col start / row end / col end/ */
-		&:first-child { grid-area: 8 / 1 / 17 / 16;}
+		/* &:first-child { grid-area: 8 / 1 / 17 / 16;}*/
 		&:nth-child(2) { grid-area: 17 / 10 / 25 / 16;}
 		&:nth-child(3) { grid-area: 10 / 16 / 22 / 30;}
 		&:nth-child(4) { grid-area: 3 / 16 / 10 / 23;}
@@ -126,6 +127,12 @@ nav.nav-wrapper {
 		color: white;
 	}
 	&__about {
+		display: flex;
+		padding: 10px;
+		background: center no-repeat;
+		background-size: cover;
+		height: 100%;
+		grid-area: 8 / 1 / 17 / 16;
 		font-size: 1.5em;
 		color: $black-color;
 	}
@@ -140,14 +147,15 @@ nav.nav-wrapper {
 /* --- PAGE STYLES --- */
 .page-content-wrapper {
 	display: grid;
-	justify-content: center;
-	max-width: 700px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	
 }
 .page-title {
 	margin-bottom: 20px;
 }
 .page-content {
-	align-content: center;
+	justify-content: center;
 }
 
 /* -- FOOTERS -- */
