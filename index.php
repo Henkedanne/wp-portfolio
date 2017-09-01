@@ -25,8 +25,8 @@
         endif; ?>
 
         -->
-    <div class="content-grid__about"><p>Hi, I'm Henrik Danielsson!
-Lorem ipsum dolor sit amet, consectetur adipiscing <br> Quisque laoreet dolor justo. Quisque pellentesque sollicitudin purus,</p></div>
+    <div class="content-grid__about"><p>Hi, I'm Henrik Danielsson! <br>Designer and Developer.
+Let's build awesome stuff together!</p></div>
     
     <?php $page_query = new WP_Query( array( 'post_type' => 'page', 'post__not_in' => array(33)) ); ?>
 
