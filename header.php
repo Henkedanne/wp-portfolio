@@ -9,14 +9,10 @@
 
     <body <?php body_class(); ?>>
     <div class="main-grid">
-        <header>
-                <span id="logo"><h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>   </span>
+        <header class="header">
+                <h1 class="header__logo"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
                 
-                <nav class="nav-wrapper" role="navigation">
-                    
-                <?php wp_nav_menu( array('theme_location' => 'primary_menu')); ?>
-                
-                
-                    
-                </nav> <!-- .nav-wrapper ends! -->
+                <nav class="header__nav" role="navigation">
+                    <?php wp_nav_menu( array('theme_location' => 'primary_menu')); ?>
+                </nav> <!-- .header__nav ends! -->
         </header>    

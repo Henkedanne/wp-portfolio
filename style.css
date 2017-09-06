@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
 /*
 Theme Name: Henrik Portfolio
 Author: Henrik Danielsson
@@ -15,70 +15,69 @@ Version 1.0
 }
 body {
 	background-color: white;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 
 }
 h1 {
 	color: black;
 	}
-header {
+.header {
 	grid-area: header;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	
 	-webkit-box-pack: justify;
-	
 	    -ms-flex-pack: justify;
-	
 	        justify-content: space-between;
 	-webkit-box-align: start;
 	    -ms-flex-align: start;
 	        align-items: flex-start;
-
 }
-#logo > h1 > a{
-	font-size: 80%;
-	padding-left: 1em;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: black;
-}
-nav.nav-wrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
-	padding-right: 1em;
-}
-nav.nav-wrapper a, nav.nav-wrapper :visited{
-		text-decoration: none;
+.header__logo {
+		font-size: 2rem;
+		padding-top: 0.5em;
+		padding-left: 1em;
 		text-transform: uppercase;
-		color: black;
-		-webkit-transition: all 0.2s ease;
-		transition: all 0.2s ease;
+		font-weight: 900;
 	}
-nav.nav-wrapper a:hover, nav.nav-wrapper :visited:hover {
-			color: #999;
+.header__logo a {
+			text-decoration: none;
+			color: black;
+
 		}
-nav.nav-wrapper li {
-		list-style: none;
+.header__nav {
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row wrap;
+		        flex-flow: row wrap;
+		padding-right: 1em;
+		padding-top: 1em;
+		text-transform: uppercase;
 	}
-#menu-primary-menu {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	padding: 10px;
-}
-#menu-primary-menu li {
-		padding-left: 10px;
-	}
-.current_page_item {
-	color: blue;
-}
+.header__nav a {
+			text-decoration: none;
+			color: black;
+			-webkit-transition: all 0.2s ease;
+			transition: all 0.2s ease;
+		}
+.header__nav a:hover {
+				color: white;
+				background-color: black;
+			}
+.header__nav li {
+			
+			list-style: none;
+			padding-left: 10px;
+			
+		}
+.header__nav .menu {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
 .main-grid {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -103,11 +102,12 @@ nav.nav-wrapper li {
 		text-decoration: none;
 	}
 /* &:first-child { grid-area: 8 / 1 / 17 / 16;}*/
-.content-grid a:nth-child(2) { grid-area: 17 / 10 / 25 / 16;}
+.content-grid a:nth-child(2) { grid-area: 16 / 2 / 28 / 16;}
 /* row start / col start / row end / col end/ */
 .content-grid a:nth-child(3) { grid-area: 10 / 16 / 22 / 30;}
 .content-grid a:nth-child(4) { grid-area: 3 / 16 / 10 / 23;}
 .content-grid a:nth-child(5) { grid-area: 22/ 16 / 30 / 25;}
+.content-grid a:nth-child(6) { grid-area: 1/ 16 / 10 / 25;}
 .content-grid__box {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -132,7 +132,8 @@ nav.nav-wrapper li {
 		background-size: cover;
 		height: 100%;
 		grid-area: 8 / 1 / 17 / 16;
-		font-size: 1.5em;
+		font-size: 1.5rem;
+		font-weight: 300;
 		color: black;
 	}
 .box__title {
@@ -143,19 +144,29 @@ nav.nav-wrapper li {
 .title-is-hidden {
 	opacity: 0;
 }
-.page-content-wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	
-}
-.page-title {
-	margin-bottom: 20px;
-}
 .page-content {
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: column;
+	        flex-flow: column;
+}
+.page-content__title {
+		font-size: rem;
+		padding
+		margin-bottom: 20px;
+	}
+.page-content__post {
+		margin-top: 2em;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+img {
+	width: 100vw;
+	height: auto;
 }
 .footer {
 	grid-area: footer;

@@ -1,43 +1,50 @@
-header {
+.header {
 	grid-area: header;
 	display: flex;
-	
 	justify-content: space-between;
 	align-items: flex-start;
-
-}
-#logo > h1 > a{
-	font-size: 80%;
-	padding-left: 1em;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: $black-color;
-}
-nav.nav-wrapper {
-	display: flex;
-	flex-flow: row wrap;
-	padding-right: 1em;
 	
-	a, :visited{
-		text-decoration: none;
+	&__logo {
+		font-size: 2rem;
+		padding-top: 0.5em;
+		padding-left: 1em;
 		text-transform: uppercase;
-		color: $black-color;
-		transition: all 0.2s ease;
-		&:hover {
-			color: $secondary-color;
+		font-weight: 900;
+		
+		a {
+			text-decoration: none;
+			color: $blackColor;
+
 		}
 	}
-	li {
-		list-style: none;
+
+	&__nav {
+		display: inline-flex;
+		flex-flow: row wrap;
+		padding-right: 1em;
+		padding-top: 1em;
+		text-transform: uppercase;
+		
+	
+		a {
+			text-decoration: none;
+			color: $blackColor;
+			transition: all 0.2s ease;
+
+			&:hover {
+				color: $whiteColor;
+				background-color: $blackColor;
+			}
+		}
+
+		li {
+			
+			list-style: none;
+			padding-left: 10px;
+			
+		}
+		.menu {
+			display: flex;
+		}
 	}
-}
-#menu-primary-menu {
-	display: flex;
-	padding: 10px;
-	li {
-		padding-left: 10px;
-	}
-}
-.current_page_item {
-	color: $primary-color;
 }

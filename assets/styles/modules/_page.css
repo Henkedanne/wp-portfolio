@@ -1,12 +1,20 @@
-.page-content-wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	
-}
-.page-title {
-	margin-bottom: 20px;
-}
 .page-content {
-	justify-content: center;
+	display: flex;
+	flex-flow: column;
+
+	&__title {
+		font-size: rem;
+		padding
+		margin-bottom: 20px;
+	}
+
+	&__post {
+		margin-top: 2em;
+		justify-content: center;
+	}
+}
+
+img {
+	width: 100vw;
+	height: auto;
 }
