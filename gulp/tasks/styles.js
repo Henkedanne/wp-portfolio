@@ -10,11 +10,11 @@ var gulp = require('gulp'),
 
 
 gulp.task('styles', function() {
-	return gulp.src('./style.css')
+	return gulp.src('./assets/styles/style.css')
 		.pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer]))
 		.on('error', function (errorInfo) {
 			console.log(errorInfo.toString());
 			this.emit('end');
 		})
-		.pipe(gulp.dest('./assets/css/'));
+		.pipe(gulp.dest('./'));
 });

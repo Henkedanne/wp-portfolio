@@ -124,7 +124,7 @@ nav.nav-wrapper li {
 		
 	}
 .content-grid__title {
-		font-size: 300%;
+		font-size: 4rem;
 		background-color: black;
 		color: white;
 	}
@@ -141,7 +141,9 @@ nav.nav-wrapper li {
 		color: black;
 	}
 .box__title {
-	grid-area: 6 / 10/ 9 / 20 ;
+	grid-area: 14 / 12/ 20 / 15 ;
+	z-index: 100;
+	
 }
 .title-is-hidden {
 	opacity: 0;

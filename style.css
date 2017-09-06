@@ -1,43 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 /*
 Theme Name: Henrik Portfolio
 Author: Henrik Danielsson
 Author URI: http://henrikdanielsson.com
 Version 1.0
 */
-
-
-
-/* -- VARIABLES -- */
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
-
-
-$background-color: white;
-$primary-color: blue;
-$secondary-color: #999;
-$white-color: white;
-$black-color: black;
-$shadow: rgba(0, 0, 0, 0.5);
-
-/* -- MAIN CSS -- */
-
 *, html {
 	margin: 0; 
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	
 }
-
 body {
-	background-color: $background-color;
+	background-color: white;
 	font-family: 'PT Sans', sans-serif;
 
 }
-
 h1 {
-	color: $black-color;
+	color: black;
 	}
+header {
+	grid-area: header;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	
+	-webkit-box-pack: justify;
+	
+	    -ms-flex-pack: justify;
+	
+	        justify-content: space-between;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 
-/* -- MAIN GRID -- */
+}
+#logo > h1 > a{
+	font-size: 80%;
+	padding-left: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+}
+nav.nav-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	padding-right: 1em;
+}
+nav.nav-wrapper a, nav.nav-wrapper :visited{
+		text-decoration: none;
+		text-transform: uppercase;
+		color: black;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+	}
+nav.nav-wrapper a:hover, nav.nav-wrapper :visited:hover {
+			color: #999;
+		}
+nav.nav-wrapper li {
+		list-style: none;
+	}
+#menu-primary-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 10px;
+}
+#menu-primary-menu li {
+		padding-left: 10px;
+	}
+.current_page_item {
+	color: blue;
+}
 .main-grid {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -48,72 +89,28 @@ h1 {
 							"footer footer";
 	height: 100vh;
 }
-/* -- HEADER -- */
-
-header {
-	grid-area: header;
-	display: flex;
-	
-	justify-content: space-between;
-	align-items: flex-start;
-
-}
-#logo > h1 > a{
-	font-size: 80%;
-	padding-left: 1em;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: $black-color;
-}
-nav.nav-wrapper {
-	display: flex;
-	flex-flow: row wrap;
-	padding-right: 1em;
-	
-	a, :visited{
-		text-decoration: none;
-		text-transform: uppercase;
-		color: $black-color;
-		transition: all 0.2s ease;
-		&:hover {
-			color: $secondary-color;
-		}
-	}
-	li {
-		list-style: none;
-	}
-}
-#menu-primary-menu {
-	display: flex;
-	padding: 10px;
-	li {
-		padding-left: 10px;
-	}
-}
-.current_page_item {
-	color: $primary-color;
-}
-
-/* --- CONTENT GRID --- */
-
 .content-grid {
 	display: grid;
 	grid-auto-rows: calc((calc(100vh - 6em) / 30) - 10px);
 	grid-auto-columns: calc((calc(100% - 6em) / 30) - 10px);
 	grid-gap: 10px;
 	width: calc(100vw - 2em);
-	justify-content: center;
-	a {
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.content-grid a {
 		text-decoration: none;
-		
-		/* row start / col start / row end / col end/ */
-		/* &:first-child { grid-area: 8 / 1 / 17 / 16;}*/
-		&:nth-child(2) { grid-area: 17 / 10 / 25 / 16;}
-		&:nth-child(3) { grid-area: 10 / 16 / 22 / 30;}
-		&:nth-child(4) { grid-area: 3 / 16 / 10 / 23;}
-		&:nth-child(5) { grid-area: 22/ 16 / 30 / 25;}
 	}
-	&__box {
+/* &:first-child { grid-area: 8 / 1 / 17 / 16;}*/
+.content-grid a:nth-child(2) { grid-area: 17 / 10 / 25 / 16;}
+/* row start / col start / row end / col end/ */
+.content-grid a:nth-child(3) { grid-area: 10 / 16 / 22 / 30;}
+.content-grid a:nth-child(4) { grid-area: 3 / 16 / 10 / 23;}
+.content-grid a:nth-child(5) { grid-area: 22/ 16 / 30 / 25;}
+.content-grid__box {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		padding: 10px;
 		background: center no-repeat;
@@ -121,12 +118,14 @@ nav.nav-wrapper {
 		height: 100%;
 		
 	}
-	&__title {
-		font-size: 300%;
+.content-grid__title {
+		font-size: 4rem;
 		background-color: black;
 		color: white;
 	}
-	&__about {
+.content-grid__about {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 		padding: 10px;
 		background: center no-repeat;
@@ -134,17 +133,16 @@ nav.nav-wrapper {
 		height: 100%;
 		grid-area: 8 / 1 / 17 / 16;
 		font-size: 1.5em;
-		color: $black-color;
+		color: black;
 	}
-}
 .box__title {
-	grid-area: 6 / 10/ 9 / 20 ;
+	grid-area: 14 / 12/ 20 / 15 ;
+	z-index: 100;
+	
 }
 .title-is-hidden {
 	opacity: 0;
 }
-
-/* --- PAGE STYLES --- */
 .page-content-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -155,18 +153,22 @@ nav.nav-wrapper {
 	margin-bottom: 20px;
 }
 .page-content {
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
-
-/* -- FOOTERS -- */
-
-/* Footer when sidebar */
 .footer {
 	grid-area: footer;
 	padding-right: 1em;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 /* Footer for the page.php */
 .page-footer{

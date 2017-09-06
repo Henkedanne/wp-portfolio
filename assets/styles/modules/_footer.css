@@ -1,0 +1,12 @@
+.footer {
+	grid-area: footer;
+	padding-right: 1em;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+/* Footer for the page.php */
+.page-footer{
+	@extend .footer;
+	margin-left: 0;
+}
