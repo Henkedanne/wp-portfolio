@@ -1,7 +1,7 @@
 <?php
 
 function portfolio_resources() {
-        wp_enqueue_style('styles', get_template_directory_uri() . '/assets/css/styles.css');
+        wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.css');
         wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array(),'1.0', true);
 }
 
