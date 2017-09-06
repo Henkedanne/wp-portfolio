@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,900');
 /*
 Theme Name: Henrik Portfolio
 Author: Henrik Danielsson
@@ -133,7 +133,7 @@ h1 {
 		height: 100%;
 		grid-area: 8 / 1 / 17 / 16;
 		font-size: 1.5rem;
-		font-weight: 300;
+		font-weight: 100;
 		color: black;
 	}
 .box__title {
@@ -154,8 +154,9 @@ h1 {
 	        flex-flow: column;
 }
 .page-content__title {
-		font-size: rem;
-		padding
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		margin-left: 2em;
 		margin-bottom: 20px;
 	}
 .page-content__post {

@@ -3,8 +3,9 @@
 	flex-flow: column;
 
 	&__title {
-		font-size: rem;
-		padding
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		margin-left: 2em;
 		margin-bottom: 20px;
 	}
 

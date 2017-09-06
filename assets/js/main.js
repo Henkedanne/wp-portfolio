@@ -5,7 +5,6 @@ var mainGrid = document.querySelector('.content-grid');
 
 
 function showTitle(e) {
-	console.log(e);
 	titleHolder.innerHTML = e.target.innerText;
 }
 
@@ -17,3 +16,5 @@ box.forEach(function(boxEl) {
 	boxEl.addEventListener('mouseover', showTitle);
 	boxEl.addEventListener('pointerleave', hideTitle);
 });
+
+console.log('I\'m looking for internship!!! Get in touch: henrik(.)danilesson(@)hyperisland.se');

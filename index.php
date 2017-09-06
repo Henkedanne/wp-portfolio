@@ -4,7 +4,7 @@
 
     <div class ="content-grid">
     
-    <div class="content-grid__about"><p><strong>Hi, I'm Henrik Danielsson!</strong> <br>Designer and Developer.
+    <div class="content-grid__about"><p><strong>Hi, I'm Henrik Danielsson!</strong> <br>Student at Hyper Island. Designer and Developer.
 Let's build awesome stuff together!</p></div>
     
     <?php $page_query = new WP_Query( array( 'post_type' => 'page', 'post__not_in' => array(21)) ); ?>
