@@ -43,6 +43,7 @@
 }
 .box__title {
 	grid-area: 14 / 12/ 20 / 15 ;
+	pointer-events: none;
 	z-index: 100;
 	
 }
