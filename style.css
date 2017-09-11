@@ -89,25 +89,38 @@ h1 {
 	height: 100vh;
 }
 .content-grid {
-	display: grid;
-	grid-auto-rows: calc((calc(100vh - 6em) / 30) - 10px);
-	grid-auto-columns: calc((calc(100% - 6em) / 30) - 10px);
-	grid-gap: 10px;
-	width: calc(100vw - 2em);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 100vw;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
 }
+@media (min-width: 530px) {
+.content-grid {
+		display: grid;
+		grid-auto-rows: calc((calc(100vh - 6em) / 30) - 10px);
+		grid-auto-columns: calc((calc(100% - 6em) / 30) - 10px);
+		grid-gap: 10px;
+		width: calc(100vw - 2em)
+}
+    }
 .content-grid a {
 		text-decoration: none;
+		height: 100%;
 	}
-/* &:first-child { grid-area: 8 / 1 / 17 / 16;}*/
-.content-grid a:nth-child(2) { grid-area: 16 / 2 / 28 / 16;}
-/* row start / col start / row end / col end/ */
-.content-grid a:nth-child(3) { grid-area: 10 / 16 / 22 / 30;}
-.content-grid a:nth-child(4) { grid-area: 3 / 16 / 10 / 23;}
-.content-grid a:nth-child(5) { grid-area: 22/ 16 / 30 / 25;}
-.content-grid a:nth-child(6) { grid-area: 1/ 16 / 10 / 25;}
+@media (min-width: 530px) {
+			.content-grid a:nth-child(2) { grid-area: 16 / 2 / 28 / 16;}
+			.content-grid a:nth-child(3) { grid-area: 10 / 16 / 22 / 30;}
+			.content-grid a:nth-child(4) { grid-area: 3 / 16 / 10 / 23;}
+			.content-grid a:nth-child(5) { grid-area: 22/ 16 / 30 / 25;}
+			.content-grid a:nth-child(6) { grid-area: 1/ 16 / 10 / 25;}
+    }
 .content-grid__box {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -116,8 +129,14 @@ h1 {
 		background: center no-repeat;
 		background-size: cover;
 		height: 100%;
+		-webkit-transition: background-size .8s ease;
+		transition: background-size .8s ease;
+		border: none;
 		
 	}
+.content-grid__box:hover {
+			background-size: 110% auto;
+		}
 .content-grid__title {
 		font-size: 4rem;
 		background-color: black;
@@ -136,15 +155,20 @@ h1 {
 		font-weight: 100;
 		color: black;
 	}
+@media (min-width: 530px) {
 .box__title {
-	grid-area: 14 / 12/ 20 / 15 ;
-	pointer-events: none;
-	z-index: 100;
+		opacity: 1;
+		grid-area: 14 / 12/ 20 / 15 ;
+		pointer-events: none;
+		z-index: 100
 	
 }
-.title-is-hidden {
+    }
+@media (min-width: 530px) {
+	.title-is-hidden {
 	opacity: 0;
 }
+    }
 .page-content {
 	grid-column: span 2;
 	display: -webkit-box;
