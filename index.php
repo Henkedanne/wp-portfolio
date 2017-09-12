@@ -7,7 +7,12 @@
     <div class="content-grid__about"><p><strong>Hi, I'm Henrik Danielsson!</strong> <br>Student at Hyper Island. Designer and Developer.
 Let's build awesome stuff together!</p></div>
     
-    <?php $page_query = new WP_Query( array( 'post_type' => 'page', 'post__not_in' => array(21)) ); ?>
+    <?php $query_args = array(
+        'post_type' => 'page',
+        'post__not_in' => array(21, 18)
+    ); ?>
+    
+    <?php $page_query = new WP_Query($query_args); ?>
 
     <?php if ($page_query->have_posts()) :
         while ($page_query->have_posts()) : $page_query->the_post(); ?>

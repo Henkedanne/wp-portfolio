@@ -36,6 +36,9 @@
 		background-size: cover;
 		height: 100%;
 		transition: background-size .8s ease;
+		font-size: 1rem;
+		justify-content: flex-end;
+		align-items: flex-end;
 		
 		@mixin atSmall {
 			margin: 0;
