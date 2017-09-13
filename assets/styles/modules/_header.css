@@ -3,20 +3,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	
-	&__logo {
-		font-size: 2rem;
-		padding-top: 0.5em;
-		padding-left: 1em;
-		text-transform: uppercase;
-		font-weight: 900;
-		
-		a {
-			text-decoration: none;
-			color: $blackColor;
-
-		}
-	}
 
 	&__nav {
 		display: inline-flex;
@@ -47,4 +33,36 @@
 			display: flex;
 		}
 	}
+}
+
+.logo__wrapper {
+
+	&__tagline {
+		
+		padding-left: 0.5em;
+		@mixin atSmall {
+			padding-left: 1.875em;
+			
+		}
+	}
+	
+	&__logo {
+		font-size: 1.5rem;
+		padding-top: 0.5em;
+		padding-left: 0.5em;
+		text-transform: uppercase;
+		font-weight: 900;
+		
+		a {
+			text-decoration: none;
+			color: $blackColor;
+
+		}
+
+		@mixin atSmall {
+			font-size: 2rem;
+			padding-left: 1em;
+		}
+	}
+
 }
