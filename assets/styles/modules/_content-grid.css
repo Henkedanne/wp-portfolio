@@ -71,10 +71,12 @@
 	}
 }
 .box__title {
-	
+	display: none;
+
 	@mixin atSmall{
-		opacity: 1;
-		grid-area: 14 / 12/ 20 / 15 ;
+		display: flex;
+		grid-column: 20;
+		grid-row: 20;
 		pointer-events: none;
 		z-index: 100;
 	

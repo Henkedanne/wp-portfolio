@@ -185,10 +185,17 @@ h1 {
 			padding: 10px
 	}
     }
+.box__title {
+	display: none;
+	
+}
 @media (min-width: 530px) {
 .box__title {
-		opacity: 1;
-		grid-area: 14 / 12/ 20 / 15 ;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		grid-column: 20;
+		grid-row: 20;
 		pointer-events: none;
 		z-index: 100
 	
