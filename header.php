@@ -10,8 +10,10 @@
     <body <?php body_class(); ?>>
     <div class="main-grid">
         <header class="header">
-                <h1 class="header__logo"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-                
+            <div class="logo__wrapper">
+                <h1 class="logo__wrapper__logo"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+                <p class="logo__wrapper__tagline"><?php bloginfo('description'); ?></p>
+            </div>   
                 <nav class="header__nav" role="navigation">
                     <?php wp_nav_menu( array('theme_location' => 'primary_menu')); ?>
                 </nav> <!-- .header__nav ends! -->
