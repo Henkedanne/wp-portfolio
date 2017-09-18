@@ -12,4 +12,5 @@ Version 1.0
 @import '/modules/_content-grid.css';
 @import '/modules/_page.css';
 @import '/modules/_footer.css';
+@import '/modules/_page-header.css';
 @import url('https://fonts.googleapis.com/css?family=Lato:100,400,900');

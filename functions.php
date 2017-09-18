@@ -20,6 +20,7 @@ register_nav_menus( array(
 
 // allows for featured image
 add_theme_support( 'post-thumbnails' );
+ 
  // remove p tags around img
 function filter_ptags_on_images($content){
    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);

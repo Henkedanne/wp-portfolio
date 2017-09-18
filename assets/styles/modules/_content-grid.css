@@ -51,14 +51,13 @@
 	}
 	&__title {
 		font-size: 4rem;
+		text-transform: uppercase;
 		background-color: $blackColor;
 		color: white;
 	}
 	&__about {
 		display: flex;
 		padding: 1em ;
-		background: linear-gradient(rgba(0,0,0,0), rgba(200,200,200,0.7));
-		background-size: cover;
 		height: 400px;
 		align-items: center;
 		grid-area: 5 / 1 / 17 / 16;

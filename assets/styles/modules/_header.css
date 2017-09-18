@@ -55,7 +55,8 @@
 		
 		a {
 			text-decoration: none;
-			color: $blackColor;
+			color: $whiteColor;
+			background-color: $blackColor;
 
 		}
 
