@@ -1,8 +1,29 @@
 .page-header {
 	grid-area: header;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
 	display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 	align-items: flex-end;
+	background: $whiteColor;
+	padding-bottom: 1em;
+
+	&__back {
+		padding-left: 1em;
+		font-size: 1.2rem;
+		
+		a {
+			text-decoration: none;
+			color: $blackColor;
+
+			&:hover {
+				color: $whiteColor;
+				background: $blackColor;
+			}
+		}
+	}
 
 	&__nav {
 		display: inline-flex;

@@ -8,13 +8,13 @@ gulp.task('watch', function() {
     
 	browerSync.init({
 		notify: false,
-		proxy: 'henrik.dev'
-    });
+		proxy: 'localhost:8888'
+	});
     
-    watch('./**/*.php', function() {
-        browerSync.reload();
-    })
-    watch('./assets/styles/**/*.css', function() {
+	watch('./**/*.php', function() {
+		browerSync.reload();
+	});
+	watch('./assets/styles/**/*.css', function() {
 		gulp.start('cssInject');
 	});
 });

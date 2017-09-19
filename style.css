@@ -239,7 +239,7 @@ h1 {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		background: center;
+		background: center fixed;
 		background-size: cover;
 		width: 100vw;
 		height: 80vh;
@@ -331,16 +331,34 @@ h1 {
 }
 .page-header {
 	grid-area: header;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 	-webkit-box-align: end;
 	    -ms-flex-align: end;
 	        align-items: flex-end;
+	background: white;
+	padding-bottom: 1em;
 }
+.page-header__back {
+		padding-left: 1em;
+		font-size: 1.2rem;
+	}
+.page-header__back a {
+			text-decoration: none;
+			color: black;
+		}
+.page-header__back a:hover {
+				color: white;
+				background: black;
+			}
 .page-header__nav {
 		display: -webkit-inline-box;
 		display: -ms-inline-flexbox;
