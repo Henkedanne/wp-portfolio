@@ -10,6 +10,7 @@
 		background-size: cover;
 		width: 100vw;
 		height: 80vh;
+		max-width: 100%;
 		justify-content: center;
 		align-items: center;
 	}
@@ -23,33 +24,43 @@
 
 	&__post {
 		display: flex;
-		max-width: 800px;
+		max-width: 960px;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;	
 		align-items: center;
 		margin-top: 2em;
+		padding: .2em;
 		
 		 > h1 {
 			text-align: center;
 			font-size: 3rem;
-			margin-bottom: 2em;
+			margin-bottom: 1em;
+			padding: .3em;
+				@mixin atSmall {
+					padding: 0 1em;
+				}
 		}
 		&__text {
 			padding: 1em 1.5em;
-			line-height: 2em;
-			@mixin atSmall {
-				max-width: 600px;
-				margin: 0 auto 2em auto;
-				padding: 0;
-				
+			line-height: 1.5em;
+			font-size: 1.2rem;
+				@mixin atSmall {
+					max-width: 600px;
+					margin: 0 auto 2em auto;
+					padding: 1em;
+					font-size: 1.4rem;
+				}
 			}
-		}
 	
 		img {
-		max-width: 350px;
+		max-width: 300px;
 		height: auto;
 		padding-bottom: 1em;
+		
+			@mixin atSmall {
+				max-width: 400px;
+			}
 		}
 	
 	}
