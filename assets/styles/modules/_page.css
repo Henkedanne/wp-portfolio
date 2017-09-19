@@ -37,7 +37,7 @@
 		}
 		&__text {
 			padding: 1em 1.5em;
-			line-height: 1.5em;
+			line-height: 2em;
 			@mixin atSmall {
 				max-width: 600px;
 				margin: 0 auto 2em auto;
