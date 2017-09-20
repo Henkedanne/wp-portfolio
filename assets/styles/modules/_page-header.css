@@ -6,31 +6,24 @@
 	width: 100%;
 	display: flex;
     justify-content: space-between;
-	align-items: flex-end;
+	align-items: flex-end baseline;
 	background: $whiteColor;
-	padding-bottom: 1em;
-
+	padding: 1em 0;
+	
 	&__back {
-		padding-left: 1em;
 		font-size: 1.2rem;
+		text-decoration: none;
+		margin-left: 1em;
 		
-		a {
-			text-decoration: none;
-			color: $blackColor;
-
-			&:hover {
-				color: $whiteColor;
-				background: $blackColor;
-			}
-		}
+		
 	}
 
 	&__nav {
 		display: inline-flex;
 		flex-flow: row wrap;
 		padding-right: 1em;
-		padding-top: 1em;
 		text-transform: uppercase;
+		align-items: center;
 		
 	
 		a {

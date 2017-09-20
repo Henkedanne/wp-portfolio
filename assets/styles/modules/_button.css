@@ -1,0 +1,16 @@
+.button {
+    border: 2px solid black;
+    padding: .1em .3em;
+    
+    &--black {
+        color: $blackColor;
+        transition: all .2s ease;
+
+        &:hover {
+				color: $whiteColor;
+				background: $blackColor;
+			}
+		
+    }
+    
+}
