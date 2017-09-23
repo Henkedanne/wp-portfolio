@@ -511,3 +511,40 @@ h1 {
                     background: #2541B2;
                     color: white;
                 }
+.about-content {
+    grid-column: span 2;
+    grid-row: span 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+.about-content__title {
+        color: #2541B2;
+        font-size: 2rem;
+    }
+.about-content__text {
+        padding: 1em 1.5em;
+        text-align: left;
+        line-height: 1.5em;
+        font-size: 1.2rem;
+        margin: 4em 0 3em 0;
+        }
+@media (min-width: 530px) {
+.about-content__text {
+                max-width: 600px;
+                margin: 0 auto 2em auto;
+                padding: 1em;
+                font-size: 1.4rem
+        }
+    }
