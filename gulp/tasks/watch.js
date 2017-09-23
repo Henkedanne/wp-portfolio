@@ -8,7 +8,7 @@ gulp.task('watch', function() {
     
 	browerSync.init({
 		notify: false,
-		proxy: 'localhost:8888'
+		proxy: 'henrik.dev'
 	});
     
 	watch('./**/*.php', function() {

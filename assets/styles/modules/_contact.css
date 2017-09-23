@@ -1,0 +1,43 @@
+.contact-content {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    &__text {
+        padding: 1em 1.5em;
+        line-height: 1.5em;
+        font-size: 1.2rem;
+        margin: 4em 0 3em 0;
+            @mixin atSmall {
+                max-width: 600px;
+                margin: 0 auto 2em auto;
+                padding: 1em;
+                font-size: 1.4rem;
+            }
+        }
+
+    &__social {
+        display: flex;
+        list-style: none;
+        margin-top: 9em;
+
+        & > li {
+            padding: 1em;
+            
+            
+            & > a {
+                text-decoration: none;
+                color: $blackColor;
+                transition: all .3s ease-out;
+                
+                &:hover {
+                    background: $blackColor;
+                    color: $whiteColor;
+                }
+            }
+        }
+    }
+}
