@@ -1,6 +1,6 @@
 <footer class="footer">
 
-    <p><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?></p>
+    <p>Henrik Danielsson - &copy; <?php echo date('Y'); ?></p>
     <?php wp_footer(); ?>
 </footer>
 
