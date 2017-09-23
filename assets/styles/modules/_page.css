@@ -19,7 +19,8 @@
 		font-size: 4rem;
 		color: $whiteColor;
 		text-transform: uppercase;
-		background-color: $blackColor;
+		padding: 0 10px;
+		background-color: $accentColor;
 	}
 
 	&__post {
@@ -37,6 +38,7 @@
 			font-size: 3rem;
 			margin-bottom: 1em;
 			padding: .3em;
+			color: $mainColor;
 				@mixin atSmall {
 					padding: 0 1em;
 				}

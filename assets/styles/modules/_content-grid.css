@@ -52,7 +52,8 @@
 	&__title {
 		font-size: 4rem;
 		text-transform: uppercase;
-		background-color: $blackColor;
+		padding: 0 10px;
+		background-color: $accentColor;
 		color: white;
 	}
 	&__about {

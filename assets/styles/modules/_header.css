@@ -14,12 +14,12 @@
 	
 		a {
 			text-decoration: none;
-			color: $blackColor;
+			color: $accentColor;
 			transition: all 0.2s ease;
 
 			&:hover {
 				color: $whiteColor;
-				background-color: $blackColor;
+				background-color: $mainColor;
 			}
 		}
 
@@ -38,7 +38,7 @@
 .logo__wrapper {
 
 	&__tagline {
-		
+		color: $mainColor;
 		padding-left: 0.5em;
 		@mixin atSmall {
 			padding-left: 1.875em;
@@ -55,8 +55,9 @@
 		
 		a {
 			text-decoration: none;
+			padding: 0 10px;
 			color: $whiteColor;
-			background-color: $blackColor;
+			background-color: $mainColor;
 
 		}
 

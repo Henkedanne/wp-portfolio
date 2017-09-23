@@ -48,13 +48,13 @@ h1 {
 	}
 .header__nav a {
 			text-decoration: none;
-			color: black;
+			color: #150578;
 			-webkit-transition: all 0.2s ease;
 			transition: all 0.2s ease;
 		}
 .header__nav a:hover {
 				color: white;
-				background-color: black;
+				background-color: #2541B2;
 			}
 .header__nav li {
 			
@@ -68,7 +68,7 @@ h1 {
 			display: flex;
 		}
 .logo__wrapper__tagline {
-		
+		color: #2541B2;
 		padding-left: 0.5em;
 	}
 @media (min-width: 530px) {
@@ -85,8 +85,9 @@ h1 {
 	}
 .logo__wrapper__logo a {
 			text-decoration: none;
+			padding: 0 10px;
 			color: white;
-			background-color: black;
+			background-color: #2541B2;
 
 		}
 @media (min-width: 530px) {
@@ -176,7 +177,8 @@ h1 {
 .content-grid__title {
 		font-size: 4rem;
 		text-transform: uppercase;
-		background-color: black;
+		padding: 0 10px;
+		background-color: #150578;
 		color: white;
 	}
 .content-grid__about {
@@ -255,7 +257,8 @@ h1 {
 		font-size: 4rem;
 		color: white;
 		text-transform: uppercase;
-		background-color: black;
+		padding: 0 10px;
+		background-color: #150578;
 	}
 .page-content__post {
 		display: -webkit-box;
@@ -282,6 +285,7 @@ h1 {
 			font-size: 3rem;
 			margin-bottom: 1em;
 			padding: .3em;
+			color: #2541B2;
 		}
 @media (min-width: 530px) {
 .page-content__post > h1 {
@@ -370,13 +374,13 @@ h1 {
 	}
 .page-header__nav a {
 			text-decoration: none;
-			color: black;
+			color: #150578;
 			-webkit-transition: all 0.2s ease;
 			transition: all 0.2s ease;
 		}
 .page-header__nav a:hover {
 				color: white;
-				background-color: black;
+				background-color: #2541B2;
 			}
 .page-header__nav li {
 			
@@ -418,24 +422,24 @@ h1 {
 	}
     }
 .button {
-    border: 2px solid black;
+    border: 2px solid #2541B2;
     padding: .2em .3em;
     text-decoration: none;
     
 }
 .button--black-border {
-        color: black;
+        color: #2541B2;
         -webkit-transition: all .2s ease-out;
         transition: all .2s ease-out;
 		
     }
 .button--black-border:hover {
 				color: white;
-				background: black;
+				background: #2541B2;
 			}
 .button--black-big {
         color: white;
-        background: black;
+        background: #2541B2;
         font-size: 1.5rem;
         padding: .3em 1em;
         -webkit-transition: all .2s ease-out;
@@ -449,7 +453,7 @@ h1 {
     }
     }
 .button--black-big:hover {
-            color: black;
+            color: #2541B2;
             background: white;
         }
 .button--uppercase {
@@ -499,11 +503,11 @@ h1 {
         }
 .contact-content__social > li > a {
                 text-decoration: none;
-                color: black;
+                color: #150578;
                 -webkit-transition: all .3s ease-out;
                 transition: all .3s ease-out;
             }
 .contact-content__social > li > a:hover {
-                    background: black;
+                    background: #2541B2;
                     color: white;
                 }

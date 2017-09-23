@@ -30,11 +30,11 @@
             
             & > a {
                 text-decoration: none;
-                color: $blackColor;
+                color: $accentColor;
                 transition: all .3s ease-out;
                 
                 &:hover {
-                    background: $blackColor;
+                    background: $mainColor;
                     color: $whiteColor;
                 }
             }
