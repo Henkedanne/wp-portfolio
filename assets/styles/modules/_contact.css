@@ -22,10 +22,22 @@
     &__social {
         display: flex;
         list-style: none;
-        margin-top: 5em;
+        margin-top: 9em;
 
         & > li {
             padding: 1em;
+            
+            
+            & > a {
+                text-decoration: none;
+                color: $blackColor;
+                transition: all .3s ease-out;
+                
+                &:hover {
+                    background: $blackColor;
+                    color: $whiteColor;
+                }
+            }
         }
     }
 }
