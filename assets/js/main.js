@@ -17,11 +17,9 @@ function addClass(className, el) {
 }
 
 
-
 box.forEach(function(boxEl) {
 	boxEl.addEventListener('mouseover', showTitle);
 	boxEl.addEventListener('pointerleave', hideTitle);
 });
 
-addClass('test', pageTitle);
 console.log('I\'m looking for internship!!! Get in touch: henrik(.)danilesson(@)hyperisland.se');
