@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css?family=Lato:100,400,900');
 /*
 Theme Name: Henrik Portfolio
@@ -33,7 +34,38 @@ h1 {
 	-webkit-box-align: start;
 	    -ms-flex-align: start;
 	        align-items: flex-start;
+
+	
+
 }
+.header__logo-wrapper > h1 {
+			font-size: 1.5rem;
+			padding-top: 0.5em;
+			padding-left: 0.5em;
+			text-transform: uppercase;
+			font-weight: 900;
+		}
+.header__logo-wrapper > h1 a {
+				text-decoration: none;
+				padding: 0 5px;
+				color: white;
+				background-color: #2541B2;
+				}
+@media (min-width: 530px) {
+.header__logo-wrapper > h1 {
+				font-size: 2rem;
+				padding-left: 1em
+		}
+    }
+.header__logo-wrapper > p {
+			color: #F25F5C;
+			padding-left: 0.5em;
+		}
+@media (min-width: 530px) {
+.header__logo-wrapper > p {
+				padding-left: 1.875em
+		}
+    }
 .header__nav {
 		display: -webkit-inline-box;
 		display: -ms-inline-flexbox;
@@ -68,35 +100,6 @@ h1 {
 			display: -ms-flexbox;
 			display: flex;
 		}
-.logo__wrapper__tagline {
-		color: #2541B2;
-		padding-left: 0.5em;
-	}
-@media (min-width: 530px) {
-.logo__wrapper__tagline {
-			padding-left: 1.875em
-	}
-    }
-.logo__wrapper__logo {
-		font-size: 1.5rem;
-		padding-top: 0.5em;
-		padding-left: 0.5em;
-		text-transform: uppercase;
-		font-weight: 900;
-	}
-.logo__wrapper__logo a {
-			text-decoration: none;
-			padding: 0 10px;
-			color: white;
-			background-color: #2541B2;
-
-		}
-@media (min-width: 530px) {
-.logo__wrapper__logo {
-			font-size: 2rem;
-			padding-left: 1em
-	}
-    }
 .main-grid {
 	display: grid;
 	grid-template-columns: 50% 50%;
