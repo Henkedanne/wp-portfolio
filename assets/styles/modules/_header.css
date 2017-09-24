@@ -2,14 +2,13 @@
 	grid-area: header;
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: flex-start baseline;
+	padding: 1em 0;
 
 	&__logo-wrapper {
 		
 		& > h1 {
 			font-size: 1.5rem;
-			padding-top: 0.5em;
-			padding-left: 0.5em;
 			text-transform: uppercase;
 			font-weight: 900;
 			
@@ -22,7 +21,7 @@
 
 			@mixin atSmall {
 				font-size: 2rem;
-				padding-left: 1em;
+				margin-left: 1rem;
 			}
 		}
 
@@ -32,7 +31,7 @@
 			font-size: .875rem;
 			@mixin atSmall {
 				padding-left: 1em;
-				font-size: 1rem;
+				font-size: 1em;
 			}
 		}
 	

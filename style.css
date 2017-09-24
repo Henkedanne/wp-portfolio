@@ -31,17 +31,16 @@ h1 {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	-webkit-box-align: start;
-	    -ms-flex-align: start;
-	        align-items: flex-start;
+	-webkit-box-align: flex-start baseline;
+	    -ms-flex-align: flex-start baseline;
+	        align-items: flex-start baseline;
+	padding: 1em 0;
 
 	
 
 }
 .header__logo-wrapper > h1 {
 			font-size: 1.5rem;
-			padding-top: 0.5em;
-			padding-left: 0.5em;
 			text-transform: uppercase;
 			font-weight: 900;
 		}
@@ -54,7 +53,7 @@ h1 {
 @media (min-width: 530px) {
 .header__logo-wrapper > h1 {
 				font-size: 2rem;
-				padding-left: 1em
+				margin-left: 1rem
 		}
     }
 .header__logo-wrapper > p {
@@ -65,7 +64,7 @@ h1 {
 @media (min-width: 530px) {
 .header__logo-wrapper > p {
 				padding-left: 1em;
-				font-size: 1rem
+				font-size: 1em
 		}
     }
 .header__nav {
