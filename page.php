@@ -3,7 +3,7 @@
 <article class="page-content">
 <?php if (have_posts()) : 
     while (have_posts()) : the_post(); ?>
-    <?php $bgImage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large'); ?> 
+    <?php $bgImage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full'); ?> 
     <div class="page-content__hero" style="background-image: url(<?php echo $bgImage[0];?>)">
         <h1 class="page-content__title"><?php the_title(); ?></h1>
     </div>
@@ -16,7 +16,7 @@
 	</section>
       
 
-<?php endwhile;
+    <?php endwhile;
     else :
         echo '<p>No Content</p>';
     endif; ?>
