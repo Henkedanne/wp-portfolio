@@ -60,10 +60,12 @@ h1 {
 .header__logo-wrapper > p {
 			color: #F25F5C;
 			padding-left: 0.5em;
+			font-size: .875rem;
 		}
 @media (min-width: 530px) {
 .header__logo-wrapper > p {
-				padding-left: 1.875em
+				padding-left: 1em;
+				font-size: 1rem
 		}
     }
 .header__nav {

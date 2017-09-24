@@ -5,7 +5,7 @@
 	align-items: flex-start;
 
 	&__logo-wrapper {
-
+		
 		& > h1 {
 			font-size: 1.5rem;
 			padding-top: 0.5em;
@@ -29,9 +29,10 @@
 		& > p {
 			color: $accentColor;
 			padding-left: 0.5em;
+			font-size: .875rem;
 			@mixin atSmall {
-				padding-left: 1.875em;
-				
+				padding-left: 1em;
+				font-size: 1rem;
 			}
 		}
 	
