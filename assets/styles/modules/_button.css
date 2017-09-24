@@ -8,8 +8,8 @@
         transition: all .2s ease-out;
 
         &:hover {
-				color: $whiteColor;
-				background: $mainColor;
+				color: $mainColor;
+				background: $accentColor;
 			}
 		
     }
@@ -18,7 +18,7 @@
         color: $whiteColor;
         background: $mainColor;
         font-size: 1.5rem;
-        padding: .3em 1em;
+        padding: .3em .5em;
         transition: all .2s ease-out;
 
         @mixin atSmall {
@@ -28,7 +28,7 @@
 
         &:hover {
             color: $mainColor;
-            background: $whiteColor;
+            background: $accentColor;
         }
 
     }

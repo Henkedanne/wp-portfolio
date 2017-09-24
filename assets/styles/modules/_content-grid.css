@@ -53,7 +53,7 @@
 		font-size: 4rem;
 		text-transform: uppercase;
 		padding: 0 10px;
-		background-color: $accentColor;
+		background-color: $mainColor;
 		color: white;
 	}
 	&__about {

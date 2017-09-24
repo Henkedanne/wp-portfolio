@@ -33,10 +33,11 @@
                 text-decoration: none;
                 color: $accentColor;
                 transition: all .3s ease-out;
+                padding: 1px 3px;
                 
                 &:hover {
                     background: $mainColor;
-                    color: $whiteColor;
+                    color: $accentColor;
                 }
             }
         }

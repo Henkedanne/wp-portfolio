@@ -42,7 +42,15 @@ function my_mce_before_init_insert_formats( $init_array ) {
                    'classes' => 'page-content__post__text',
                    'wrapper' => true,
                     
-               ),  
+               ),
+               array(  
+                   'title' => 'Video-block',  
+                   'block' => 'div',  
+                   'classes' => 'page-content__post__video',
+                   'wrapper' => true,
+                    
+               ),
+              
            );  
            // Insert the array, JSON ENCODED, into 'style_formats'
            $init_array['style_formats'] = json_encode( $style_formats );  

@@ -48,13 +48,14 @@ h1 {
 	}
 .header__nav a {
 			text-decoration: none;
-			color: #F25F5C;
+			color: #2541B2;
 			-webkit-transition: all 0.2s ease;
 			transition: all 0.2s ease;
+			padding: 1px 3px;
 		}
 .header__nav a:hover {
-				color: white;
-				background-color: #2541B2;
+				color: #2541B2;
+				background-color: #F25F5C;
 			}
 .header__nav li {
 			
@@ -178,7 +179,7 @@ h1 {
 		font-size: 4rem;
 		text-transform: uppercase;
 		padding: 0 10px;
-		background-color: #F25F5C;
+		background-color: #2541B2;
 		color: white;
 	}
 .content-grid__about {
@@ -305,6 +306,17 @@ h1 {
 					font-size: 1.4rem
 			}
     }
+.page-content__post__video > iframe {
+				width: 300px;
+				height: 170px;
+				margin-bottom: 1em;
+			}
+@media (min-width: 530px) {
+.page-content__post__video > iframe {
+					width: 640px;
+					height: 360px
+			}
+    }
 .page-content__post img {
 		max-width: 300px;
 		height: auto;
@@ -374,13 +386,14 @@ h1 {
 	}
 .page-header__nav a {
 			text-decoration: none;
-			color: #F25F5C;
+			color: #2541B2;
 			-webkit-transition: all 0.2s ease;
 			transition: all 0.2s ease;
+			padding: 1px 3px;
 		}
 .page-header__nav a:hover {
-				color: white;
-				background-color: #2541B2;
+				color: #2541B2;
+				background-color: #F25F5C;
 			}
 .page-header__nav li {
 			
@@ -434,14 +447,14 @@ h1 {
 		
     }
 .button--black-border:hover {
-				color: white;
-				background: #2541B2;
+				color: #2541B2;
+				background: #F25F5C;
 			}
 .button--black-big {
         color: white;
         background: #2541B2;
         font-size: 1.5rem;
-        padding: .3em 1em;
+        padding: .3em .5em;
         -webkit-transition: all .2s ease-out;
         transition: all .2s ease-out;
 
@@ -454,7 +467,7 @@ h1 {
     }
 .button--black-big:hover {
             color: #2541B2;
-            background: white;
+            background: #F25F5C;
         }
 .button--uppercase {
         text-transform: uppercase;
@@ -507,8 +520,9 @@ h1 {
                 color: #F25F5C;
                 -webkit-transition: all .3s ease-out;
                 transition: all .3s ease-out;
+                padding: 1px 3px;
             }
 .contact-content__social > li > a:hover {
                     background: #2541B2;
-                    color: white;
+                    color: #F25F5C;
                 }
