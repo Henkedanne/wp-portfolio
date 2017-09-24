@@ -81,12 +81,15 @@
 		grid-row: 18;
 		pointer-events: none;
 		z-index: 100;
+		
 	
 	}
 	
 }
-@mixin atSmall {
-	.title-is-hidden {
-	opacity: 0;
-}
+.title-is-hidden {
+	color: $accentColor;
+	
+	@mixin atSmall {
+		opacity: 0;
+	}			
 }
