@@ -546,6 +546,31 @@ h1 {
                     background: #2541B2;
                     color: #F25F5C;
                 }
+.page-content__picture {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 100vw;
+        margin-top: 5em;
+
+    }
+.page-content__picture > img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            border: solid 5px #2541B2;
+            
+        }
+@media (min-width: 530px) {
+.page-content__picture > img {
+                width: 350px;
+                height: 350px
+            
+        }
+    }
 .page-content__logos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -554,7 +579,7 @@ h1 {
         flex-flow: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-}
-.page-content__logos > img {
-        margin: 0 20px;
     }
+.page-content__logos > img {
+            margin: 0 20px;
+        }
