@@ -29,7 +29,7 @@ Let's build awesome stuff together!</p></div>
         else :
             echo '<p>No Content</p>';
         endif; ?>
-        <div class="content-grid__box box__title">
+        <div id="title" class="content-grid__box box__title">
             <h1 class="content-grid__title"></h1>
         </div>
     </div> <!-- .content-grid ENDS... -->

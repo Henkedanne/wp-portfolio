@@ -13,6 +13,7 @@
 		max-width: 100%;
 		justify-content: center;
 		align-items: center;
+		
 	}
 
 	&__title {
@@ -48,8 +49,9 @@
 			line-height: 1.5em;
 			font-size: 1.2rem;
 			color: $accentColor;
+			margin-bottom: 2em;
 				@mixin atSmall {
-					max-width: 600px;
+					max-width: 800px;
 					margin: 0 auto 2em auto;
 					padding: 1em;
 					font-size: 1.4rem;
@@ -62,8 +64,14 @@
 				height: 170px;
 				margin-bottom: 1em;
 				@mixin atSmall {
+					width: 460px;
+					height: 260px;
+					margin-bottom: 2em;
+				}
+				@mixin atMedium {
 					width: 640px;
 					height: 360px;
+					margin-bottom: 3em;
 				}
 			}
 		}

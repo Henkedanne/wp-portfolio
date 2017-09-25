@@ -31,11 +31,12 @@
 	&__box {
 		display: flex;
 		padding: 10px;
+		border: solid 4px $mainColor;
 		margin-bottom: 1em;
 		background: center no-repeat;
 		background-size: cover;
 		height: 100%;
-		transition: background-size .8s ease;
+		transition: all .2s ease-out;
 		font-size: 1rem;
 		justify-content: flex-end;
 		align-items: flex-end;
@@ -45,16 +46,19 @@
 		}
 		
 		&:hover {
-			background-size: 110% auto;
+			border: solid 4px $accentColor;
 		}
 		
 	}
 	&__title {
+		
 		font-size: 4rem;
 		text-transform: uppercase;
 		padding: 0 10px;
 		background-color: $mainColor;
 		color: $accentColor;
+		transform: rotate(5deg);
+		
 	}
 	&__about {
 		display: flex;
@@ -93,4 +97,7 @@
 	@mixin atSmall {
 		opacity: 0;
 	}			
+}
+#title {
+	border: none;
 }

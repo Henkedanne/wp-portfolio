@@ -6,7 +6,7 @@
 	padding: 1em 0;
 
 	&__logo-wrapper {
-		
+	
 		& > h1 {
 			font-size: 2.25rem;
 			text-transform: uppercase;
@@ -21,7 +21,7 @@
 				}
 
 			@mixin atSmall {
-				font-size: 2.25rem;
+				font-size: 2.5rem;
 				margin-left: 1rem;
 			}
 		}
@@ -41,8 +41,8 @@
 
 	&__nav {
 		display: flex;
+		margin-top:  .5em;
 		padding-right: 1em;
-		padding-top: 1em;
 		text-transform: uppercase;
 		
 		
