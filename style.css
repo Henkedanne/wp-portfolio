@@ -322,13 +322,13 @@ h1 {
 					height: 360px
 			}
     }
-.page-content__post img {
+.page-content__post a, .page-content__post img {
 		max-width: 300px;
 		height: auto;
-		padding-bottom: 1em;
+		margin-bottom: 1em;
 		}
 @media (min-width: 530px) {
-.page-content__post img {
+.page-content__post a, .page-content__post img {
 				max-width: 400px
 		}
     }
@@ -528,3 +528,15 @@ h1 {
                     background: #2541B2;
                     color: #F25F5C;
                 }
+.page-content__logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+.page-content__logos > img {
+        margin: 0 20px;
+    }

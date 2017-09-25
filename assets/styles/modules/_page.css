@@ -68,10 +68,10 @@
 			}
 		}
 	
-		img {
+		a, img {
 		max-width: 300px;
 		height: auto;
-		padding-bottom: 1em;
+		margin-bottom: 1em;
 		
 			@mixin atSmall {
 				max-width: 400px;

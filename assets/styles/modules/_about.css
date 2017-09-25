@@ -1,0 +1,9 @@
+.page-content__logos {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+
+    & > img {
+        margin: 0 20px;
+    }
+}
