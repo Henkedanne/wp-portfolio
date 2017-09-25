@@ -21,17 +21,17 @@
 		@mixin atSmall {
 			height: auto;
 			width: 100%;
-			&:nth-child(2) { grid-area: 15 / 2 / 28 / 16;}
-			&:nth-child(3) { grid-area: 15 / 16 / 30 / 30;}
-			&:nth-child(4) { grid-area: 2 / 15 / 15 / 26;}
-			&:nth-child(5) { grid-area: 22/ 16 / 30 / 25;}
+			&:nth-child(2) { grid-area: 19 / 7 / 29 / 19;}
+			&:nth-child(3) { grid-area: 15 / 19 / 25 / 28;}
+			&:nth-child(4) { grid-area: 3 / 19 / 15 / 30;}
+			&:nth-child(5) { grid-area: 9/ 11 / 19 / 19;}
 			&:nth-child(6) { grid-area: 1/ 16 / 10 / 25;}
 		}
 	}
 	&__box {
 		display: flex;
 		padding: 10px;
-		border: solid 4px $mainColor;
+		
 		margin-bottom: 1em;
 		background: center no-repeat;
 		background-size: cover;
@@ -43,6 +43,7 @@
 		
 		@mixin atSmall {
 			margin: 0;
+			/*border: solid 4px $mainColor;*/
 		}
 		
 		&:hover {
@@ -57,7 +58,6 @@
 		padding: 0 10px;
 		background-color: $mainColor;
 		color: $accentColor;
-		transform: rotate(5deg);
 		
 	}
 	&__about {
@@ -65,7 +65,7 @@
 		padding: 1em ;
 		height: 350px;
 		align-items: center;
-		grid-area: 5 / 1 / 17 / 15;
+		grid-area: 3 / 1 / 10 / 18;
 		font-size: 1.375rem;
 		font-weight: 400;
 		color: $mainColor;
@@ -82,8 +82,8 @@
 
 	@mixin atSmall{
 		display: flex;
-		grid-column: 18;
-		grid-row: 18;
+		grid-column: 23;
+		grid-row: 15;
 		pointer-events: none;
 		z-index: 100;
 		
