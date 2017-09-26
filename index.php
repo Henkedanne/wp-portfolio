@@ -32,6 +32,9 @@ Let's build awesome stuff together!</p></div>
         <div id="title" class="content-grid__box box__title">
             <h1 class="content-grid__title"></h1>
         </div>
+        <span class="fill-box fill-box__1"></span>
+        <span class="fill-box fill-box__2"></span>
+        <span class="fill-box fill-box__3"></span>
     </div> <!-- .content-grid ENDS... -->
 
 
