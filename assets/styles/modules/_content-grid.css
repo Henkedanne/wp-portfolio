@@ -5,76 +5,84 @@
 	
 	@mixin atSmall {
 		display: grid;
-		grid-column: span 2;
-		grid-auto-rows: calc((calc(100vh - 6em) / 30) - 10px);
-		grid-auto-columns: calc((calc(100% - 6em) / 30) - 10px);
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 		grid-gap: 10px;
-		max-width: calc(960px - 2em);
-		justify-content: center;
+		margin: 0 10px;
+	}
+	@mixin atMedium {
 		margin: 0 auto;
 	}
 	
 	a {
 		text-decoration: none;
-		height: 200px;
-		width: 100%;
+		height: 250px;
+		grid-column-end: span 1;
 		margin-bottom: 0.5em;
 		
 		@mixin atSmall {
-			height: auto;
-			width: 100%;
-			&:nth-child(2) { grid-area: 20 / 15 / 28 / 25;}
-			&:nth-child(3) { grid-area: 12 / 15 / 20 / 26;}
-			&:nth-child(4) { grid-area: 2 / 15 / 12 / 30;}
-			&:nth-child(5) { grid-area: 14 / 4 / 23 / 15;}
-			&:nth-child(6) { grid-area: 1/ 16 / 10 / 25;}
+			height: 250px;
+			
+			
 		}
 		@mixin atMedium {
-			&:nth-child(2) { grid-area: 19 / 10 / 29 / 19;}
-			&:nth-child(3) { grid-area: 15 / 19 / 25 / 28;}
-			&:nth-child(4) { grid-area: 3 / 15 / 15 / 26;}
-			&:nth-child(5) { grid-area: 9/ 5 / 19 / 15;}
-			&:nth-child(6) { grid-area: 1/ 16 / 10 / 25;}
+			height: 250px;
+
+			&:nth-child(2) {
+				grid-column-end: span 1;
+				
+				}
+			&:nth-child(3) {grid-column-end: span 1;}
+			&:nth-child(4) {grid-column-end: span 1;}
 		}
 	}
 	&__box {
 		display: flex;
 		padding: 10px;
-		
 		margin-bottom: 1em;
 		background: center no-repeat;
 		background-size: cover;
 		height: 100%;
-		transition: all .2s ease-out;
+		transition: all .1s ease-out;
 		font-size: 1rem;
 		justify-content: flex-end;
 		align-items: flex-end;
 		
 		@mixin atSmall {
 			margin: 0;
-			border: solid 4px $mainColor;
+			/*border: solid 4px $mainColor;*/
+			box-shadow: 0px 2px 10px rgba(0,0,0,0.18);
 		}
 		
 		&:hover {
-			border: solid 4px $accentColor;
+			box-shadow: 0px 2px 15px rgba(0,0,0,0.3);
 		}
 		
 	}
 	&__title {
-		
+		position: absolute;
+		top: 50%;
+		left: 40%;
 		font-size: 4rem;
 		text-transform: uppercase;
 		padding: 0 10px;
 		background-color: $mainColor;
 		color: $accentColor;
-		
+		display: none;
+
+		@mixin atSmall{
+			display: flex;
+			pointer-events: none;
+			z-index: 100;
+		}
 	}
+	
 	&__about {
 		display: flex;
+		
 		padding: 1em ;
 		height: 350px;
 		align-items: center;
-		grid-area: 1 / 2 / 10 / 15;
+		
 		font-size: 1.375rem;
 		font-weight: 400;
 		color: $mainColor;
@@ -82,7 +90,9 @@
 
 		@mixin atSmall {
 			padding: 10px;
-			align-items: unset;
+			/*align-items: unset;*/
+			height: 250px;
+			
 		}
 	}
 }
@@ -91,8 +101,6 @@
 
 	@mixin atSmall{
 		display: flex;
-		grid-column: 23;
-		grid-row: 15;
 		pointer-events: none;
 		z-index: 100;
 		
@@ -109,18 +117,4 @@
 }
 #title {
 	border: none;
-}
-.fill-box {
-	background: $mainColor;
-
-	@mixin atSmall {
-		&__1 { grid-area: 12 / 12 / 14 / 15;}
-		&__2 { grid-area: 12 / 26 / 15 / 30;}
-		&__3 { grid-area: 23 / 10 / 27 / 15;}
-	}
-	@mixin atMedium {
-		&__1 { grid-area: 15 / 15 / 19 / 19;}
-		&__2 { grid-area: 11 / 26 / 15 / 28;}
-		&__3 { grid-area: 19 / 7 / 27 / 10;}
-	}
 }
