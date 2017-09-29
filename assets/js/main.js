@@ -17,4 +17,4 @@ box.forEach(function(boxEl) {
 	boxEl.addEventListener('pointerleave', hideTitle);
 });
 
-console.log('I\'m looking for internship!!! Get in touch: henrik(.)danilesson(@)hyperisland.se');
+console.log('I\'m looking for internship!!! Get in touch: henrik(.)danielsson(@)hyperisland.se');
