@@ -29,12 +29,12 @@
 		a {
 			text-decoration: none;
 			color: $mainColor;
-			transition: all 0.2s ease;
+			transition: all 0.2s ease-out;
 			padding: 1px 3px;
 
 			&:hover {
 				color: $mainColor;
-				background-color: $accentColor;
+				border-bottom: solid 3px $accentColor;
 			}
 		}
 
