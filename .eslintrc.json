@@ -8,12 +8,9 @@
     "rules": {
         "indent": [
             "error",
-            "tab"
+            "space"
         ],
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
+        
         "quotes": [
             "error",
             "single"

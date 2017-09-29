@@ -7,16 +7,20 @@
 	display: flex;
     justify-content: space-between;
 	align-items: flex-end baseline;
-	background: $whiteColor;
+	background: rgba(255,255,255, 0.4);
 	padding: 1em 0;
+	transition: all .5s ease-out;
 	
 	&__back {
 		font-size: 1.2rem;
 		text-decoration: none;
-		margin-left: 1em;
-		
-		
+		margin-left: 1em;	
 	}
+
+	&--hide {
+		top: -67px;
+	}
+
 
 	&__nav {
 		display: inline-flex;

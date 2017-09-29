@@ -397,15 +397,18 @@ h1 {
 	-webkit-box-align: flex-end baseline;
 	    -ms-flex-align: flex-end baseline;
 	        align-items: flex-end baseline;
-	background: white;
+	background: rgba(255,255,255, 0.4);
 	padding: 1em 0;
+	-webkit-transition: all .5s ease-out;
+	transition: all .5s ease-out;
 }
 .page-header__back {
 		font-size: 1.2rem;
 		text-decoration: none;
-		margin-left: 1em;
-		
-		
+		margin-left: 1em;	
+	}
+.page-header--hide {
+		top: -67px;
 	}
 .page-header__nav {
 		display: -webkit-inline-box;
