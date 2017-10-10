@@ -17,4 +17,5 @@ box.forEach(function(boxEl) {
 	boxEl.addEventListener('pointerleave', hideTitle);
 });
 
+console.log('Using wordpress. Theme coded from scratch by me.');
 console.log('I\'m looking for internship!!! Get in touch: henrik(.)danielsson(@)hyperisland.se');
