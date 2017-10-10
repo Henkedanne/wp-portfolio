@@ -1,10 +1,13 @@
 $backgroundColor: white;
-$mainColor: #2541B2;
-$accentColor: #F25F5C;
+$mainColor: black;
+$accentColor: #F42272;
 $whiteColor: white;
 $blackColor: black;
 $shadow: rgba(0, 0, 0, 0.5);
+$textColor: black;
 
 
 $blue: #150578;
 $orgblu: #2541B2;
+
+/* #F25F5C */

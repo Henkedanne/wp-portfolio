@@ -68,6 +68,7 @@
 		background-color: $mainColor;
 		color: $accentColor;
 		display: none;
+		letter-spacing: 2px;
 
 		@mixin atSmall{
 			display: flex;
@@ -87,6 +88,10 @@
 		font-weight: 400;
 		color: $mainColor;
 
+		& > p > strong {
+			color: $accentColor;
+		}
+
 
 		@mixin atSmall {
 			padding: 10px;
@@ -98,7 +103,7 @@
 }
 .box__title {
 	display: none;
-
+	
 	@mixin atSmall{
 		display: flex;
 		pointer-events: none;

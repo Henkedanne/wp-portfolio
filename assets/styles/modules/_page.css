@@ -42,13 +42,15 @@
 			color: $mainColor;
 				@mixin atSmall {
 					padding: 0 1em;
+					margin-top: 1em;
 				}
 		}
 		&__text {
 			padding: 1em 1.5em;
 			line-height: 1.5em;
+			
 			font-size: 1.2rem;
-			color: $accentColor;
+			color: $textColor;
 			margin-bottom: 2em;
 				@mixin atSmall {
 					max-width: 800px;

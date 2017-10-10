@@ -6,7 +6,7 @@
 	width: 100%;
 	display: flex;
     justify-content: space-between;
-	align-items: flex-end baseline;
+	align-items: center;
 	background: $whiteColor;
 	padding: 1em 0;
 	
@@ -14,35 +14,50 @@
 		font-size: 1.2rem;
 		text-decoration: none;
 		margin-left: 1em;
-		
+		letter-spacing: 2px;
+		@mixin atSmall {
+			margin-left: 1em;
+			
+		}
+		@mixin atMedium {
+			margin-left: 2em;
+			
+		}
 		
 	}
 
 	&__nav {
-		display: inline-flex;
-		flex-flow: row wrap;
-		padding-right: 1em;
+		display: flex;
 		text-transform: uppercase;
-		align-items: center;
+		
+		@mixin atSmall {
+			margin-right: 1em;
+			
+		}
+		@mixin atMedium {
+			margin-right: 2em;
+		}
 		
 	
 		a {
 			text-decoration: none;
+			letter-spacing: 2px;
 			color: $mainColor;
 			transition: all 0.2s ease-out;
-			padding: 1px 3px;
+			margin-right: .5em;
+			@mixin atSmall {
+				margin-right: 1em;
+			}
 
 			&:hover {
-				color: $mainColor;
+				color: $accentColor;
 				border-bottom: solid 3px $accentColor;
 			}
 		}
 
 		li {
-			
 			list-style: none;
 			padding-left: 10px;
-			
 		}
 		.menu {
 			display: flex;
@@ -50,35 +65,7 @@
 	}
 }
 
-.logo__wrapper {
-
-	&__tagline {
-		
-		padding-left: 0.5em;
-		@mixin atSmall {
-			padding-left: 1.875em;
-			
-		}
-	}
-	
-	&__logo {
-		font-size: 1.5rem;
-		padding-top: 0.5em;
-		padding-left: 0.5em;
-		text-transform: uppercase;
-		font-weight: 900;
-		
-		a {
-			text-decoration: none;
-			color: $whiteColor;
-			background-color: $blackColor;
-
-		}
-
-		@mixin atSmall {
-			font-size: 2rem;
-			padding-left: 1em;
-		}
-	}
-
+.current-menu-item  > a{
+	color: $accentColor;
+	text-decoration: line-through;
 }
